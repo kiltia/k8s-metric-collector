@@ -1,7 +1,7 @@
 import dash
 from dash import dcc, html
 
-dash.register_page(__name__, path="/metrics")
+dash.register_page(__name__, path="/timeline")
 
 layout = html.Div(
     [

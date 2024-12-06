@@ -1,7 +1,7 @@
 import dash
 from dash import dcc, html
 
-dash.register_page(__name__, path="/load_balance")
+dash.register_page(__name__, path="/cluster_load")
 
 layout = html.Div(
     [
