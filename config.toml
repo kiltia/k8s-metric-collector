@@ -1,0 +1,3 @@
+refresh_interval = 2000
+top_command = ["ssh", "prod", "kubectl", "top", "pod", "-n", "prod"]
+limits_command = ["ssh", "prod", "kubectl", "get", "pods", "-n", "prod", "-o", "custom-columns='NAME:.metadata.name,CPU_REQ:spec.containers[].resources.requests.cpu,CPU_LIM:spec.containers[].resources.limits.cpu,MEMORY_REQ:spec.containers[].resources.requests.memory,MEM_LIM:spec.containers[].resources.limits.memory'"]
