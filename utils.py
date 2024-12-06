@@ -1,6 +1,7 @@
 from decimal import Decimal, InvalidOperation
 
 
+# NOTE(nrydanov): This is just a copy from Python binding for Kubernetes API
 def parse_quantity(quantity):
     """
     Parse kubernetes canonical form quantity like 200Mi to a decimal number.
